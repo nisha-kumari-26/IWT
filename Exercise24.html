@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>
+            Question-24
+        </title>
+        <script>
+            function convert(){
+                input=document.forms[0].elements[0].value
+                inOp=document.forms[0].elements[1].value
+                outOpdocument.forms[0].elements[3].value
+                if(inOp=='cl' && outOp=='ke'){
+                    res=input+273;
+                }
+                else if(inOp=='fh' && outOp=='Ce'){
+                    res=(input*9/5)+32;
+                }
+                else if(inOp== 'kl'&& outOp=='fa'){
+                    res==((input-32)*5/2)+273;
+                }    
+            }
+    
+        </script>
+    </head>
+    <body>
+        <form action="#" method="post">
+            <input type="number" name="input" required/>
+            <select name="temp">
+                <option value="kl">Kelvin</option>
+                <option value="cl">Celsius</option>
+                <option value="fh">Fahrenheit</option>
+            </select><br><br><br>
+
+            <label>Temperature(Output)</label>
+            <input type="text"/>
+            <select name="temp">
+                <option value="ke">Kelvin</option>
+                <option value="Ce">Celsius</option>
+                <option value="fa">Fahrenheit</option>
+            </select><br><br><br>
+<input type="submit" value="convert"/>
+
+        </form>
+        <br>
+        <br>
+        
+    </body>
+</html>

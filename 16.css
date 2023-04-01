@@ -1,0 +1,47 @@
+img1{
+    height:100%;
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    margin:0;
+    2-index:5;
+}
+img2{
+    height:100%;
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    margin:0;
+    2-index:5;
+    
+}
+h1{
+    text-align:center;
+    text-decoration-line:underline;
+    text-decoration-color:rgb(64,207,69);
+    text-decoration-thickness:5px;
+    color:rgb(153,0,255);
+}
+div{
+    border:solid 2px rgb(0,0,0);
+    height:400px;
+    width:30%;
+    margin:20px;
+    float:6ft;
+    position:relative;
+}
+h2{
+    margin-left: 50px;
+}
+</style>
+<body>
+<div>
+    <h1 style"2-index:10; font=-size:8px";>old;gold</h1>
+    <img class="img" src="image/1.jpeg">
+    </div>
+    <div>
+        <h2 style"2-index:10; font=-size:8px";>Hardwork is the key to success</h2>
+        <img class="img2" src="image/2.jpeg">
+    </div>

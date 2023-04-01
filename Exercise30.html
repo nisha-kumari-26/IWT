@@ -1,0 +1,28 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <input type ="button" value="start" />
+        <br>
+        <input type ="button" value="stop" />
+        <div id="display"  onclick="hide()">
+
+        </div>
+        <script>
+        
+            d = new Date();
+            function clock()
+            {
+            hour = d.getHours();
+            cTime = d.getHours() +":"+d.getMinutes()+":"+d.getSeconds()
+            document.getElementById('display').innerHTML = cTime;
+            }
+            setInterval(clock,1000);
+        function hide()
+            {
+                document.getElementById('display').style.display='none';   
+            }
+        </script>
+    </body>
+</html>

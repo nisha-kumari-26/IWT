@@ -1,0 +1,12 @@
+body{
+    background-image: url("images\3.jpg");
+    background-size: 100% 100%;
+}
+h1{
+    font-style: italic;
+    color:rgb(214,57,40);
+    font-size: 50px;
+    background-color: rgb(259,255,115);
+    border-radius: 20px;
+    border:solid 5px black;
+}

@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>
+            Text 
+        </title>
+    </head>
+    <body>
+        <div id="d1"></div>
+        <script type="text/javascript">
+            size=5;
+            i=setInterval(increase,100);
+            function increase(){
+                t1=document.getElementById("d1");
+                t1.innerHTML="OPEN";
+                s=size++;
+                t1.style.fontSize=s+"px";
+                t1.style.color="red";
+                if(size==50){
+                    clearInterval(i);
+                    d=setInterval(decrease,100);
+                }
+            }
+            function decrease(){
+                t1=document.getElementById("d1");
+                t1.innerHTML="CLOSE";
+                s=size--;
+                t1.style.fontSize=s+"px";
+                t1.style.color="black";
+                if(size==5){
+                    clearInterval(d);
+                    i=setInterval(increase,100);
+                }
+            }
+        </script>
+    </body>
+</html>

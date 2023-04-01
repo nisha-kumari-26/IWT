@@ -1,0 +1,27 @@
+body{
+    background-image: linear-gradient(rgba(255,0,0,6.2), rgba(0,255,0,0.2)rgba(0,0,225,0.2)),url("image/3.jpeg");
+    background-repeat: no-repeat;
+    background-position: counter;
+    background-size: 100% 100%;
+}
+h1{
+    font-size: 30px;
+    font-style: bold;
+    color: rgb(22,245,115);
+
+}
+p{
+    font-size: 15px;
+    color: rgb(243,243, 243);
+    line-height: 50px;
+}
+n{
+    font-size: bold;
+    color:darkblue;
+    background-color: aquamarine;
+}
+b{
+    font-style: italic;
+    color:darkgoldenrod;
+    background-color: rgb(252,255,52);
+}

@@ -1,0 +1,139 @@
+<html>
+    <head>
+        <title>Exercise 25</title>
+        
+    </head>
+    <body>
+        <form method=post onsubmit='return check()'>
+            <table>
+                <tr>
+                    <td colspan="2">
+                        <h1>Registration Form</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Enter first name</label>
+                    </td>
+                    <td>
+                        <input type=text>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Enter last name</label>
+                    </td>
+                    <td>
+                        <input type=text>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Enter User ID</label>
+                    </td>
+                    <td>
+                        <input type=text>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Enter Password</label>
+                    </td>
+                    <td>
+                        <input type=password>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Enter Confirm Password</label>
+                    </td>
+                    <td>
+                        <input type=password>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Enter Address</label>
+                    </td>
+                    <td>
+                        <input type=text>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Enter Email ID</label>
+                    </td>
+                    <td>
+                        <input type=text>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Enter Contact Number</label>
+                    </td>
+                    <td>
+                        <input type=text>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan=2 id="center">
+                        <button type=submit>Submit</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <script>
+            function check(){
+                fname=document.forms[0].elements[0].value;
+                lname=document.forms[0].elements[1].value;
+                userId=document.forms[0].elements[2].value;
+                passw=document.forms[0].elements[3].value;
+                cpassw=document.forms[0].elements[4].value;
+                address=document.forms[0].elements[5].value;
+                emailId=document.forms[0].elements[6].value;
+                contactNo=document.forms[0].elements[7].value;
+                Fname=/^[a-zA-Z]{2,}$/;
+                Lname=/^[a-zA-Z]*$/;
+                UId=/^[a-zA-Z]{5}[0-9]{5}$/;
+                Pass=/^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&*(){}:";'<>?]).{8,16}$/
+                Email=/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/
+                addressLength=address.length
+                Phone=/^[1-9][0-9]{9}$/
+                if(Fname.test(fname)==false){
+                    alert("Enter Valid First Name.");
+                }
+                else if(Lname.test(lname)==false)
+                {
+                    alert("Enter Valid Last Name.");
+                }
+                else if(UId.test(userId)==false){
+                    alert("Enter Valid User ID.");
+                }
+                else if(Pass.test(passw)==false){
+                    alert("Enter Valid Password.");
+                }
+                else if(passw!=cpassw){
+                    alert("Passwords do not match.")
+                }
+                else if(addressLength<=0){
+                    alert("Enter Valid Address.");
+                }
+                else if(Email.test(emailId)==false){
+                    alert('Enter Valid Email.')
+                }
+                else if(Phone.test(contactNo)==false)
+                {
+                    alert("Enter valid Contact Number.")
+                }
+                else{
+                    return true;
+                }
+            }
+        </script>
+    </body>
+</html>
+
+
+
+
+

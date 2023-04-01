@@ -1,0 +1,37 @@
+<html>
+<head>
+  <title>Greeting Message</title>
+  <style>
+   p{
+      padding: 50px;
+      display: flex;
+      justify-content: center;
+      margin-top: 25%;
+      font-size: 50px;
+      font-weight: bolder;
+    }
+  </style>
+</head>
+<body>
+  <script>
+let userName = prompt("What is your name?");
+let now = new Date();
+
+let hours = now.getHours();
+
+let greeting;
+if (hours < 12) {
+  greeting = "Good morning";
+} else if (hours < 18) {
+  greeting = "Good afternoon";
+} else {
+  greeting = "Good evening";
+}
+
+let greetingMessage = document.createElement("p");
+greetingMessage.textContent = greeting + ", " + userName + "!";
+document.body.appendChild(greetingMessage);
+
+  </script>
+</body>
+</html>
